@@ -1,0 +1,19 @@
+# 1 "D:\\CODE ARDUINO\\CODE ARDUINO\\RF HC12 UART\\CT_PHAT\\CT_PHAT.ino"
+
+SoftwareSerial mySerial(11, 10);      
+int gt1;
+
+void setup() 
+{
+ mySerial.begin(9600);
+ Serial.begin(9600);
+}
+
+void loop() 
+{
+ gt1=100;
+ mySerial.print(gt1);      
+ Serial.println(gt1);        
+ delay(1000);
+}
+
